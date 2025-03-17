@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Мой сайт</title>
+    <!-- Подключение Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+
+    <!-- Шапка сайта -->
+    <header class="bg-dark text-white py-3">
+        <div class="container">
+            <div class="d-flex justify-content-between align-items-center">
+                <h1 class="h4 mb-0">Название сайта</h1>
+                <nav>
+                    <ul class="nav">
+                        <li class="nav-item"><a href="#" class="nav-link text-white">Главная</a></li>
+                        <li class="nav-item"><a href="#" class="nav-link text-white">О нас</a></li>
+                        <li class="nav-item"><a href="#" class="nav-link text-white">Контакты</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <!-- Основной контент -->
+    <main class="container my-5">
+
+        <!-- Секция 1: Слайдер -->
+        <section class="mb-5">
+            <div id="carouselExample" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="https://via.placeholder.com/800x400" class="d-block w-100" alt="Slide 1">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="https://via.placeholder.com/800x400" class="d-block w-100" alt="Slide 2">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="https://via.placeholder.com/800x400" class="d-block w-100" alt="Slide 3">
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Предыдущий</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Следующий</span>
+                </button>
+            </div>
+        </section>
+
+        <!-- Секция 2: Карточки -->
+        <section class="mb-5">
+            <div class="row">
+                <div class="col-md-4 mb-3">
+                    <div class="card">
+                        <img src="https://via.placeholder.com/300x200" class="card-img-top" alt="Card 1">
+                        <div class="card-body">
+                            <h5 class="card-title">Карточка 1</h5>
+                            <p class="card-text">Описание карточки 1.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-3">
+                    <div class="card">
+                        <img src="https://via.placeholder.com/300x200" class="card-img-top" alt="Card 2">
+                        <div class="card-body">
+                            <h5 class="card-title">Карточка 2</h5>
+                            <p class="card-text">Описание карточки 2.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-3">
+                    <div class="card">
+                        <img src="https://via.placeholder.com/300x200" class="card-img-top" alt="Card 3">
+                        <div class="card-body">
+                            <h5 class="card-title">Карточка 3</h5>
+                            <p class="card-text">Описание карточки 3.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Секция 3: Аккордеон -->
+        <section class="mb-5">
+            <div class="accordion" id="accordionExample">
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingOne">
+                        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                            Раздел 1
+                        </button>
+                    </h2>
+                    <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                            Информация для раздела 1.
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingTwo">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                            Раздел 2
+                        </button>
+                    </h2>
+                    <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                            Информация для раздела 2.
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingThree">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                            Раздел 3
+                        </button>
+                    </h2>
+                    <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                            Информация для раздела 3.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Футер -->
+    <footer class="bg-dark text-white py-4">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <h5 class="mb-3">Контактная информация</h5>
+                    <p>Адрес: ул. Примерная, 123</p>
+                    <p>Телефон: +7 (123) 456-78-90</p>
+                    <p>Email: info@example.com</p>
+                </div>
+                <div class="col-md-6">
+                    <h5 class="mb-3">Социальные сети</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="#" class="text-white">Facebook</a></li>
+                        <li><a href="#" class="text-white">Twitter</a></li>
+                        <li><a href="#" class="text-white">Instagram</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Подключение Bootstrap JS и зависимостей -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"></script>
+</body>
+</html>
